@@ -5,6 +5,8 @@
 [![NPM downloads](http://img.shields.io/npm/dm/uba-server-static.svg?style=flat)](https://npmjs.org/package/uba-server-static)
 
 ---
+[![NPM](https://nodei.co/npm/uba-server-static.png)](https://nodei.co/npm/uba-server-static/)
+---
 
 # Installation
 

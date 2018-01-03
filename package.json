@@ -1,6 +1,6 @@
 {
   "name": "uba-server-static",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "static server plugin for uba-server",
   "main": "index.js",
   "scripts": {
