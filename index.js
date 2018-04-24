@@ -1,11 +1,14 @@
 /**
  * static server plugin for uba-server
- * Date : 2017-12-27 13:20:18
+ * Date : 2018-04-24 17:12:40
  */
 
 const path = require("path");
-const svr = require("koa-static");
+const serveStatic = require("serve-static");
 
 module.exports = (app, opt) => {
-  app.use(svr(opt.root));
+  for (let i = 0; i < opt.length; i++) {
+    let option = opt[i];
+    app.use(serveStatic(path.join(path.resolve('.'), option.dir), Object.assign({}, option.options)));
+  }
 }

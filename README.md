@@ -11,20 +11,27 @@
 # Installation
 
 ```bash
-$ npm install uba-server uba-server-static -D
+$ npm install uba-server-static -D
 ```
 
 # Usage
 
-open `uba.config.js` file 
+Edit the `.ubarc` file
 ```js
-plugins: {
-    static: {
-        root: "src/static"
-    }
+{
+    "static": [{
+        "dir": "src/static"
+    },{
+        "dir": "public",
+        "options":{
+            "maxAge":"1d"
+        }
+    }]
 }
 ```
 # API
 
-### root
-- root directory string. nothing above this root directory can be served
+### dir
+- dir directory string. nothing above this root directory can be served
+
+> Look at more https://www.npmjs.com/package/serve-static#api
